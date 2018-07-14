@@ -3,7 +3,7 @@ const { Client } = require('discord.js')
 const WS = require('./ws/ws')
 
 var client = new Client()
-WS.init('123456', client)
+var ws = new WS('123456', 5665, client)
 
 client.on('ready', () => {
     console.log(`Connected as ${client.user.tag}`)
@@ -11,4 +11,4 @@ client.on('ready', () => {
 
 
 
-client.login('MzI4NTc5NjU2MzIyMjUyODAx.DirNwQ.apwNJjUFiWbF3BLMjHkhFUz6-ZI')
+client.login(':P')
