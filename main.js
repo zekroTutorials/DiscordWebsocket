@@ -11,4 +11,4 @@ client.on('ready', () => {
 
 
 
-client.login('MzI4NTc5NjU2MzIyMjUyODAx.DirNwQ.apwNJjUFiWbF3BLMjHkhFUz6-ZI')
+client.login(':P')
