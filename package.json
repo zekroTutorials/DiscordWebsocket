@@ -1,0 +1,26 @@
+{
+  "name": "discordwebsockettutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "discord.js": "^11.3.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zekroTutorials/DiscordWebsocket.git"
+  },
+  "author": "zekro <contact@zekro.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zekroTutorials/DiscordWebsocket/issues"
+  },
+  "homepage": "https://github.com/zekroTutorials/DiscordWebsocket#readme"
+}
