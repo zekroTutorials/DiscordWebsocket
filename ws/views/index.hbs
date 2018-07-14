@@ -1,0 +1,12 @@
+<iframe style="display: none" name="dummyframe" id="dummyframe"></iframe>
+
+<form action="/sendMessage" method="POST" target="dummyframe" >
+    <input type="hidden" name="token" value="{{ token }}" />
+    <select name="channelid">
+        {{#each chans}}
+            <option value="{{this.id}}">{{this.name}}</option>
+        {{/each}}
+    </select>
+    <input type="text" name="text" placeholder="TEXT">
+    <input type="submit" class="button" value="SEND">
+</form>
