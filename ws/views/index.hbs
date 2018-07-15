@@ -1,12 +1,20 @@
+{{!-- 
+    Invisible dummy frame to redirect response answer 
+    to this to don't reload the page after request.
+--}}
 <iframe style="display: none" name="dummyframe" id="dummyframe"></iframe>
 
 <form action="/sendMessage" method="POST" target="dummyframe" >
+    {{!-- Pass token back to authenticate web request --}}
     <input type="hidden" name="token" value="{{ token }}" />
+    {{!-- Channel selector --}}
     <select name="channelid">
         {{#each chans}}
             <option value="{{this.id}}">{{this.name}}</option>
         {{/each}}
     </select>
+    {{!-- Message text input --}}
     <input type="text" name="text" placeholder="TEXT">
+    {{!-- Send button --}}
     <input type="submit" class="button" value="SEND">
 </form>

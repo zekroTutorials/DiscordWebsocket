@@ -1,0 +1,7 @@
+{
+    "token": "your discord bot token",
+    "ws": {
+        "port": 5665,
+        "token": "123456"
+    }
+}
