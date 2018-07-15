@@ -47,15 +47,20 @@ class WebSocket {
             var _token = req.body.token
             var channelid = req.body.channelid
             var text = req.body.text
+
+            if(!_token || !channelid || !text)
+                return res.sendStatus(400);
     
             if (!this.checkToken(_token))
-                return
+                return res.sendStatus(401)
     
             var chan = this.client.guilds.first().channels.get(channelid)
     
             if (chan) {
                 chan.send(text)
-            }
+                res.sendStatus(200)
+            } else
+                res.sendStatus(406)
         })
 
         this.server = this.app.listen(port, () => {
