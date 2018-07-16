@@ -2,7 +2,20 @@
 
 ## Video
 
-👉 [*Comming Soon*](https://zekro.de/soon)
+👉 [**VIDEO (German)**](https://youtu.be/LxLob6-8Sl0)
+
+---
+
+## Used Dependencies
+
+```
+$ npm install discord.js express express-handlebars body-parser
+```
+
+- [discord.js](https://www.npmjs.com/package/discord.js)
+- [express](https://www.npmjs.com/package/express)
+- [express-handlebars](https://www.npmjs.com/package/express-handlebars)
+- [body-parser](https://www.npmjs.com/package/body-parser)
 
 ---
 
